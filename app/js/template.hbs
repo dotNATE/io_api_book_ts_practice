@@ -1,0 +1,11 @@
+{{#each docs}}
+<div class="bookDisplayCard">
+    <img src="https://covers.openlibrary.org/b/id/{{cover_i}}-M.jpg" alt="{{title}} cover art" />
+    <div class="bookInfo">
+        <h3 class="bookTitle">{{title}}</h3>
+        <h3 class="bookAuthor">{{author_name}}</h3>
+        <h3 class="bookYear">{{first_publish_year}}</h3>
+        <a class="goodReads" href="https://www.goodreads.com/search?utf8=%E2%9C%93&query={{title}}" target="_blank">Find me on Good Reads!</a>
+    </div>
+</div>
+{{/each}}

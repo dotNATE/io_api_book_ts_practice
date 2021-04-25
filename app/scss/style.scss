@@ -1,5 +1,4 @@
-body {
-  display: block;
-  color: red;
-  border: 1px;
-}
+@import 'variables';
+@import 'universal';
+@import 'main';
+@import 'media';

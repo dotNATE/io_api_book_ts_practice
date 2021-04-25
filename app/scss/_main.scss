@@ -1,0 +1,67 @@
+header {
+  height: fit-content;
+  width: 85%;
+  margin: 0 auto;
+  & h1 {
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: black;
+  }
+}
+
+form {
+  width: 85%;
+  margin: 0 auto;
+  & label {
+    display: none;
+  }
+  & input {
+    min-height: 2.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1rem 3rem -2rem;
+    color: white;
+    background-color: #25273c;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    &:focus {
+      outline: blue;
+    }
+  }
+}
+
+#bookDisplay {
+  width: 85%;
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.bookDisplayCard {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(37,39,60, .9);
+  border-radius: 5px;
+  box-shadow: 0 1rem 3rem -2rem;
+  & img {
+    width: 80%;
+  }
+  & .bookInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: $secondary-color;
+  }
+  & .goodReads {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+.goodReads:hover {
+  text-shadow: 0 0.1rem 2rem;
+}
